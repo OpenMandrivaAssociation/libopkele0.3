@@ -10,6 +10,7 @@ Group:		System/Libraries
 License:	MIT
 URL:		http://kin.klever.net/libopkele/
 Source0:	http://kin.klever.net/dist/libopkele-%{version}.tar.gz
+Patch0:		libopkele-newer_libcurl.m4_fix.diff
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
@@ -57,6 +58,7 @@ This package contains the static libopkele library and its header files.
 %prep
 
 %setup -q -n libopkele-%{version}
+%patch0 -p0
 
 %build
 export WANT_AUTOCONF_2_5=1
