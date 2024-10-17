@@ -8,7 +8,7 @@ Version:	0.3.2
 Release:	%mkrel 8
 Group:		System/Libraries
 License:	MIT
-URL:		http://kin.klever.net/libopkele/
+URL:		https://kin.klever.net/libopkele/
 Source0:	http://kin.klever.net/dist/libopkele-%{version}.tar.gz
 Patch0:		libopkele-newer_libcurl.m4_fix.diff
 BuildRequires:	autoconf
